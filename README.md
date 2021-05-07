@@ -9,4 +9,4 @@ Imitacion de la pagina web de Halcyonic intentando aplicar todo lo aprendido de:
 
 ## Ver Online
 Este proyecto se encuentra en: 
-[GitHub Pages](https://ivankopech.github.io/Halcyonic/)
+[GitHub Pages] (https://ivankopech.github.io/Halcyonic/)
