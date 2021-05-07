@@ -16,11 +16,11 @@
 
 
 body{
-    font-family: Yanone Kaffeesatz;
+    font-family: 'Yanone Kaffeesatz';
     font-size: 13.5pt;
     padding:0px;
     margin:0px;
-    background-color:#0e0101;
+    background-color: #3B4346;
   }
 
   header{
@@ -86,7 +86,7 @@ header .principal a {
 #boton-click-me{
     background-color: rgb(202, 95, 7);
     border-style: none;
-    font-family: Yanone Kaffeesatz;
+    font-family: 'Yanone Kaffeesatz';
     font-size: 20pt;
     color: white;
 }
@@ -109,12 +109,108 @@ header .principal a {
         flex-direction:row;
     }
 
-    #features {
-        background: #353D40 url(images/bg02.jpg);
-        border-bottom: solid 1px #272e31;
-        padding: 45px 0 45px 0;
-        text-shadow: -1px -1px 1px rgb(0 0 0 / 75%);
-        color: #a0a8ab;
-    }
-
 }
+
+.holdingContainer{
+    width: 100%;
+    display: flex;
+    background-color: #3B4346;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+
+.internalContainers{
+    flex: 1;
+    background-color: #3B4346;
+    color: white;
+    padding: 30px;
+    font-size: 15px;
+    font-family: 'Yanone Kaffeesatz';
+}
+
+@media screen and (max-width: 760px){
+    .holdingContainer{
+        flex-direction: column-reverse;
+    }
+        
+}
+
+.colorlineaseparadora{
+    background-color: rgb(153, 149, 149);
+    color: rgb(153, 149, 149);
+}
+
+.holdingSecondContainer{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    background-color: #808283;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+.secondInternalContainers{
+    flex: 1;
+    background-color:white;
+    color: black;
+    padding: 30px;
+    font-size: 17px;
+    font-family: 'Yanone Kaffeesatz';
+}
+.seconddInternalContainers{
+    flex: 1;
+    background-color:white;
+    color: black;
+    padding: 30px;
+    font-size: 17px;
+    font-family: 'Yanone Kaffeesatz';
+}
+.thirdInternalContainer{
+    flex: 1;
+    justify-content: start;
+    background-color:white;
+    color: black;
+    padding: 30px;
+    font-size: 17px;
+    font-family: 'Yanone Kaffeesatz';
+}
+@media screen and (max-width: 950px){
+    .holdingSecondContainer{
+        flex-direction: column-reverse;
+    }
+        
+}
+
+.lista-tilde-roja{
+    font-size: 17px;
+}
+.textoderecha{
+    text-align: center;
+}
+.colorbr{
+    background-color: black;
+    color: black;
+}
+.holdingFooter{
+    width: 100%;
+    display: flex;
+    background-color: #9ca0a1;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+.internalFooter{
+    flex: 1;
+    color: black;
+    padding: 30px;
+    font-size: 17px;
+    font-family: 'Yanone Kaffeesatz';
+}
+.secondInternalFooter{
+    flex: 1;
+    justify-content: start;
+    color: black;
+    padding: 30px;
+    font-size: 17px;
+    font-family: 'Yanone Kaffeesatz';
+}
+
+
