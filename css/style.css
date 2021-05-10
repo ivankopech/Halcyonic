@@ -270,8 +270,8 @@ a:hover {
     margin: 0.125rem 0.625rem;
     white-space: nowrap;
 }
-/* one before the last child */
+
 .ft-legal-list li:nth-last-child(2) {
-    flex: 1;       /* same as flex-grow: 1; */
+    flex: 1;       
 }
 

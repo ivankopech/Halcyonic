@@ -7,8 +7,8 @@
 .contenedor{
     /* background-color:#0e0101; */
     margin: auto;
-
-
+    
+    flex: 1;
     display: flex;
     flex-flow: row wrap;
     
@@ -16,6 +16,8 @@
 
 
 body{
+    display: flex;
+    flex-direction: column;
     font-family: 'Yanone Kaffeesatz';
     font-size: 13.5pt;
     padding:0px;
@@ -75,30 +77,68 @@ header .principal a {
      
  }
 
- footer{
-    width: 100%;
-    padding: 50px;
-    background-color: #797e80;
-    /* color: white; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
+ ul {
+    list-style: none;
+    padding-left: 0;
 }
-.pie-pagina{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    flex-grow: 4;
+footer {
+    background-color: rgb(240, 220, 220);
+    color: rgb(143, 133, 133);
+    line-height: 1.5;
+}
+footer a {
+    text-decoration: underline;
+    color: rgb(143, 133, 133);
+}
+a:hover {
+    text-decoration: underline;
+}
+.ft-title {
+    color: rgb(143, 133, 133);
+    font-family: 'Yanone Kaffeesatz';
+    font-size: 1.375rem;
+    padding-bottom: 0.625rem;
+}
+.ft-texto {
+    color: rgb(143, 133, 133);
+    font-family: 'Yanone Kaffeesatz';
+    font-size: 1.375rem;
+    padding-bottom: 0.625rem;
 }
 
-
-footer div ul{
-    width:90%;
-    justify-content: end;
+.ft-main {
+    padding: 1.25rem 1.875rem;
     display: flex;
     flex-wrap: wrap;
-    align-items: right;
-    flex-grow: 1;
+    flex: 1;
 }
+.ft-main-item {
+    padding: 1.25rem;
+    min-width: 12.5rem /*200px*/;
+}
+
+@media only screen and (max-width: 950px) {
+    .ft-main {
+        flex-direction: column;
+    }
+}
+
+.ft-legal {
+    padding: 0.9375rem 1.875rem;
+    color: rgb(143, 133, 133);
+}
+.ft-legal-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.ft-legal-list li {
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;
+}
+
+.ft-legal-list li:nth-last-child(2) {
+    flex: 1;       
+}
+
