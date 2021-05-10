@@ -147,7 +147,7 @@ header .principal a {
     padding: 30px;
     justify-content: left;
     display: flex;
-    background-color: #808283;
+    background-color: #e0e3e4;
     box-sizing: border-box;
     flex-direction: row;
 }
@@ -215,7 +215,7 @@ ul {
     padding-left: 0;
 }
 footer {
-    background-color: rgb(240, 220, 220);
+    background-color: rgb(178, 182, 184);
     color: rgb(143, 133, 133);
     line-height: 1.5;
 }
