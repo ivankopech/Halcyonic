@@ -39,6 +39,7 @@ body{
 header .principal a {
     color: white;
     text-decoration: none;
+    font-size: 39px;
 }
 
  header nav {
