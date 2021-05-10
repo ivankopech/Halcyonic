@@ -74,6 +74,57 @@ header .principal a {
     color: rgb(153, 149, 149);
 }
 
+.holdingSecondContainer{
+    width: 100%;
+    padding: 30px;
+    justify-content: left;
+    display: flex;
+    background-color: #e0e3e4;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+.InternalContainers{
+    flex: 1;
+    background-color:white;
+    color: black;
+    padding: 30px;
+    font-size: 17px;
+    font-family: 'Yanone Kaffeesatz';
+}
+.InternalContainers {
+   
+    width: 100px; /* A fixed width as the default */
+  }
+  
+  .InternalContainers-center { 
+    flex-grow: 1; /* Set the middle element to grow and stretch */
+  }
+
+.InternalContainers + .InternalContainers{
+    margin-left: 2%;
+}
+.InternalContainers .interno-derecha{
+    margin-top: 20%;
+}
+.InternalContainers .interno-izquierda{
+    margin-top: 20%;
+}
+
+
+@media screen and (max-width: 950px){
+    .holdingSecondContainer{
+        flex-direction: column;
+    }
+    .InternalContainers + InternalContainers{
+        margin-top: 2%;
+    }
+        
+}
+
+
+
+
+
 ul {
     list-style: none;
     padding-left: 0;
