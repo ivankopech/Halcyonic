@@ -8,7 +8,7 @@
     background-color:#0e0101;
     margin: auto;
 
-
+    flex: 1;
     display: flex;
     flex-flow: row wrap;
     
@@ -16,6 +16,8 @@
 
 
 body{
+    display: flex;
+    flex-direction: column;
     font-family: 'Yanone Kaffeesatz';
     font-size: 13.5pt;
     padding:0px;
@@ -143,6 +145,7 @@ header .principal a {
 .holdingSecondContainer{
     width: 100%;
     padding: 30px;
+    justify-content: left;
     display: flex;
     background-color: #808283;
     box-sizing: border-box;
@@ -173,9 +176,23 @@ header .principal a {
     font-size: 17px;
     font-family: 'Yanone Kaffeesatz';
 }
+
+.secondInternalContainers + .seconddInternalContainers{
+    margin-left: 2%;
+}
+.seconddInternalContainers + .thirdInternalContainer{
+    margin-left: 2%;
+}
+
 @media screen and (max-width: 950px){
     .holdingSecondContainer{
-        flex-direction: column-reverse;
+        flex-direction: column;
+    }
+    .secondInternalContainers + .seconddInternalContainers{
+        margin-top: 2%;
+    }
+    .seconddInternalContainers + .thirdInternalContainer{
+        margin-top: 2%;
     }
         
 }
@@ -190,27 +207,71 @@ header .principal a {
     background-color: black;
     color: black;
 }
-.holdingFooter{
-    width: 100%;
-    display: flex;
-    background-color: #9ca0a1;
-    box-sizing: border-box;
-    flex-direction: row;
+
+
+
+ul {
+    list-style: none;
+    padding-left: 0;
 }
-.internalFooter{
-    flex: 1;
-    color: black;
-    padding: 30px;
-    font-size: 17px;
-    font-family: 'Yanone Kaffeesatz';
+footer {
+    background-color: rgb(240, 220, 220);
+    color: rgb(143, 133, 133);
+    line-height: 1.5;
 }
-.secondInternalFooter{
-    flex: 1;
-    justify-content: start;
-    color: black;
-    padding: 30px;
-    font-size: 17px;
+footer a {
+    text-decoration: underline;
+    color: rgb(143, 133, 133);
+}
+a:hover {
+    text-decoration: underline;
+}
+.ft-title {
+    color: rgb(143, 133, 133);
     font-family: 'Yanone Kaffeesatz';
+    font-size: 1.375rem;
+    padding-bottom: 0.625rem;
+}
+.ft-texto {
+    color: rgb(143, 133, 133);
+    font-family: 'Yanone Kaffeesatz';
+    font-size: 1.375rem;
+    padding-bottom: 0.625rem;
 }
 
+.ft-main {
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+.ft-main-item {
+    padding: 1.25rem;
+    min-width: 12.5rem /*200px*/;
+}
+
+@media only screen and (max-width: 950px) {
+    .ft-main {
+        flex-direction: column;
+    }
+}
+
+.ft-legal {
+    padding: 0.9375rem 1.875rem;
+    color: rgb(143, 133, 133);
+}
+.ft-legal-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.ft-legal-list li {
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;
+}
+/* one before the last child */
+.ft-legal-list li:nth-last-child(2) {
+    flex: 1;       /* same as flex-grow: 1; */
+}
 
