@@ -13,10 +13,7 @@
     flex-flow: row wrap;
     
 }
-hr {
-    height: 2px;
-    background-color: red;
-  }
+
 
 
 body{
@@ -91,7 +88,7 @@ header .principal a {
 }
 
 #boton-click-me{
-    background-color: rgb(202, 95, 7);
+    background-color: rgb(212, 51, 11);
     border-style: none;
     font-family: 'Yanone Kaffeesatz';
     font-size: 20pt;
@@ -100,7 +97,7 @@ header .principal a {
 
   #button-header {
     
-    background-color:  rgb(202, 95, 7);
+    background-color:  rgb(212, 51, 11);
     border-radius: 20px;
     width: 250px;
     height: 60px;
@@ -111,12 +108,20 @@ header .principal a {
     font-size: 21px;
     cursor: pointer;
 }
+
 @media screen and (max-width: 800px){
     header .secundario{
         flex-direction:row;
     }
 
 }
+@media screen and (max-width: 800px){
+    header nav.nav-foto{
+        flex-direction:column-reverse;
+    }
+
+}
+
 
 .holdingContainer{
     width: 100%;
@@ -128,7 +133,7 @@ header .principal a {
 
 .internalContainers{
     flex: 1;
-    background-color: #3B4346;
+    background-color: #30373a;
     color: white;
     padding: 30px;
     font-size: 15px;
@@ -231,18 +236,20 @@ footer a {
 a:hover {
     text-decoration: underline;
 }
+
 .ft-title {
-    color: rgb(143, 133, 133);
+    color: rgb(112, 106, 106);
     font-family: 'Yanone Kaffeesatz';
     font-size: 1.375rem;
     padding-bottom: 0.625rem;
 }
 .ft-texto {
-    color: rgb(143, 133, 133);
+    color: rgb(112, 106, 106);
     font-family: 'Yanone Kaffeesatz';
     font-size: 1.375rem;
     padding-bottom: 0.625rem;
 }
+
 
 .ft-main {
     padding: 1.25rem 1.875rem;
